@@ -56,7 +56,7 @@ main {
     width: 90%;
     margin: auto auto;
     padding-top: 40px;
-    border: 1px solid blue;
+   
 }
 
 .item {
@@ -68,12 +68,54 @@ main {
     height: 80px;
     width: 100%;
     box-shadow: 0  0 20px #ccc;
+    margin-bottom: 2%;
+    border-radius: 10px;
 }
 
+.item.clicado {
+    background: #d4f6d9;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;   /* Adiciona um risco sobre o texto quando a tarefa está clicada */
+     color: #666;
+}
+
+   
+  
 .item-icone {
-    flex: 10%;
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome {
+    flex: 55%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .item-botao {
-    flex: 15%
+    flex: 25%;
+}
+
+.delete {
+    background: red;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.check_circle {
+    color:green;
 }
